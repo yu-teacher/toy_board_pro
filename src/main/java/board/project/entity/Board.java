@@ -28,6 +28,7 @@ public class Board extends BaseEntity{
     private Long likeCount;
     @ColumnDefault("0")
     private Long commentCount;
+    /** 0 공지, 1 자유게시판, 2 허우솔 재입대, 3 윾승민 탈당, 4 한상진 인중 때리기 */
     private Long boardCase;
     @ManyToOne(fetch = FetchType.LAZY)
     private Member member;
